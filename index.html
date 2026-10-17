@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A letter from Lee 💌</title>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar"></div>
+
+<!-- 1. Envelope -->
+<section class="screen active">
+  <div class="card">
+    <div class="from">💌 This is from your boyfriend, Lee…</div>
+    <h1 class="script">For my love Precious</h1>
+    <div class="env" id="env">
+      <div class="back"></div>
+      <div class="note script">I love you ♥</div>
+      <div class="front"></div>
+      <div class="flap"></div>
+      <div class="seal" id="seal">💖</div>
+    </div>
+    <p><b>Open me if you love Lee</b> 😏</p>
+    <button class="btn pulse" id="openBtn">Open me 💖</button>
+  </div>
+</section>
+
+<!-- 2. How much -->
+<section class="screen">
+  <div class="card">
+    <div id="bigheart">💗</div>
+    <h2>How much do you love me?</h2>
+    <p>Slide carefully. Lee is watching 👀</p>
+    <input type="range" id="love" min="0" max="100" value="20" aria-label="How much do you love Lee">
+    <div class="lbl" id="lovelbl">Hmm… try again 😒</div>
+    <div class="row"><button class="btn" data-next>Next 💞</button></div>
+  </div>
+</section>
+
+<!-- 3. Why -->
+<section class="screen">
+  <div class="card">
+    <h2>Why do you love me? 🥺</h2>
+    <p>Pick all that apply (be honest, I can tell)</p>
+    <div class="chips" id="chips">
+      <button class="chip">My handsome face 😎</button>
+      <button class="chip">My terrible jokes 🤡</button>
+      <button class="chip">My cooking 🍳 (lying?)</button>
+      <button class="chip">My big heart 💗</button>
+      <button class="chip">My hugs 🧸</button>
+      <button class="chip">Everything about me 🥹</button>
+    </div>
+    <textarea id="why" placeholder="Anything else? Say it sweetly… 💭"></textarea>
+    <button class="btn" data-next>Next 💞</button>
+  </div>
+</section>
+
+<!-- 4. The big question -->
+<section class="screen">
+  <div class="card">
+    <div style="font-size:3rem">🥹</div>
+    <h2>Okay, serious question…</h2>
+    <p>Do you love Lee more than food? 🍕</p>
+    <div class="row">
+      <button class="btn" data-next id="yes">Yes, obviously 💕</button>
+      <button class="btn alt" id="no">No 💔</button>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Silly -->
+<section class="screen">
+  <div class="card">
+    <h2>Silly time 🤪</h2>
+    <p>If Lee were a food, what would he be?</p>
+    <input type="text" id="food" placeholder="e.g. a sweet strawberry 🍓">
+    <p>How many kisses do I deserve today? 😘</p>
+    <div class="step"><button id="minus" aria-label="fewer">−</button><b id="kiss">10</b><button id="plus" aria-label="more">+</button></div>
+    <button class="btn" data-next>Finish 💌</button>
+  </div>
+</section>
+
+<!-- 6. Finale -->
+<section class="screen">
+  <div class="card">
+    <div style="font-size:3.2rem">💖</div>
+    <h1 class="script">I love you too!</h1>
+    <p class="letter script">You are my favourite person, my safe place, and my sweetest reason to smile. Thank you for loving me back, even though you're troublesome sometimes I Still love you!</p>
+    <div class="sig script">— Lee, loves you Precious 😘</div>
+    <div class="row">
+      <a class="btn pulse" id="send" target="_blank" rel="noopener" style="text-decoration:none">Send my answers to Lee 💌</a>
+      <button class="btn alt" id="again">Replay 🔁</button>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
